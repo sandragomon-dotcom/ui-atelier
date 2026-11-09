@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>UI Atelier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:ital,opsz,wght@1,9..144,600&family=Newsreader:opsz,wght@6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="UI Atelier">
+      <img src="assets/logo.png" alt="UI Atelier" width="1520" height="360">
+    </a>
+    <a class="btn btn-sm" href="#install">Install Plugin</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <h1>Design critique <em>at the speed of thought</em></h1>
+        <p class="lead">Instant, heuristic critique on your active Figma canvas. Spot hierarchy drift, spacing tension, and rogue tokens the moment you explore.</p>
+        <a class="btn" id="install" href="#">Install Plugin on Figma
+          <img src="assets/figma/arrow-up-right.svg" alt="" width="10" height="10">
+        </a>
+      </div>
+      <div class="hero-art">
+        <img src="assets/mascot-fox.webp" alt="A fox in glasses and a purple apron stitching a translucent interface card" width="1734" height="907">
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="canvas">
+        <div class="canvas-chrome">
+          <div class="chrome-left">
+            <span class="tag">#Artboard 04</span>
+            <span>Landing Page Hero / Exploration B</span>
+          </div>
+          <div class="chrome-right">
+            <span class="status"><span class="dot dot-green" aria-hidden="true"></span>Critique Engine Active</span>
+            <span class="zoom">100% Zoom</span>
+          </div>
+        </div>
+
+        <div class="workspace">
+          <div class="mock-card">
+            <span class="handle h-tl" aria-hidden="true"></span><span class="handle h-tr" aria-hidden="true"></span>
+            <span class="handle h-bl" aria-hidden="true"></span><span class="handle h-br" aria-hidden="true"></span>
+            <span class="guide-label mono">X: 128px</span>
+            <span class="guide-line" aria-hidden="true"></span>
+            <div class="mock-body">
+              <p class="eyebrow">Editorial Series</p>
+              <h3>Autonomous Studio Aesthetics</h3>
+              <p class="mock-text">Evaluating the balance of negative space and typographic tension across multi-column modular layouts.</p>
+              <div class="mock-actions">
+                <span class="btn btn-xs" aria-hidden="true">Read Article</span>
+                <span class="pin pin-ok">
+                  <span class="ico" style="--i:url(assets/figma/pin-ok.svg)" aria-hidden="true"></span>contrast 4.5:1 passed ✨
+                </span>
+              </div>
+            </div>
+            <span class="pin pin-warn pin-float">
+              <span class="ico" style="--i:url(assets/figma/pin-warn.svg)" aria-hidden="true"></span>leading is too tight 🤏
+            </span>
+            <span class="stamp">
+              <span class="dot dot-lime" aria-hidden="true"></span>hierarchy feels balanced 👌
+            </span>
+          </div>
+
+          <aside class="inspector">
+            <div class="panel">
+              <div class="panel-head">
+                <span class="panel-title">Nudge Heuristics</span>
+                <span class="mono muted">AI-CO-PILOT</span>
+              </div>
+              <ul class="chips">
+                <li class="chip">
+                  <span class="chip-name"><span class="ico" style="--i:url(assets/figma/chip-headline.svg)" aria-hidden="true"></span>Headline Rhythm</span>
+                  <span class="mono chip-val v-warn">+3px recommended</span>
+                </li>
+                <li class="chip">
+                  <span class="chip-name"><span class="ico" style="--i:url(assets/figma/chip-grid.svg)" aria-hidden="true"></span>Grid Alignment</span>
+                  <span class="mono chip-val v-ok">grid offset +4px 🎯</span>
+                </li>
+                <li class="chip">
+                  <span class="chip-name"><img src="assets/figma/chip-tone.svg" alt="" width="13" height="13">Warm Canvas Tone</span>
+                  <span class="mono chip-val muted"><span class="swatch" aria-hidden="true"></span>#FDFBF7</span>
+                </li>
+              </ul>
+            </div>
+            <div class="status-mini">
+              <span class="muted">Ready for Figma export</span>
+              <strong>⌘ + ⇧ + C</strong>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="principles">
+    <div class="container">
+      <div class="section-head">
+        <h2>Built for ideation, not nitpicking.</h2>
+        <p>UI Atelier offers gentle design nudges while you explore layout compositions.</p>
+      </div>
+      <div class="pillars">
+        <article class="pillar">
+          <img class="pillar-icon" src="assets/icon-speed.png" alt="" width="320" height="300">
+          <h3>Zero-Latency Feedback</h3>
+          <p>Critique runs instantly on your selected frames without waiting for cloud queues or context-switching tabs.</p>
+        </article>
+        <article class="pillar">
+          <img class="pillar-icon" src="assets/icon-type.png" alt="" width="320" height="300">
+          <h3>Typographic Empathy</h3>
+          <p>Analyzes measure, baseline cadence, and optical hierarchy. Alerts you when your display serifs feel suffocated.</p>
+        </article>
+        <article class="pillar">
+          <img class="pillar-icon" src="assets/icon-layers.png" alt="" width="320" height="300">
+          <h3>Native Canvas Overlays</h3>
+          <p>Nudges appear directly as soft non-destructive overlay badges over your layers, ready to accept or dismiss with one keystroke.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container cta-inner">
+      <h2>Ready to refine your canvas?</h2>
+      <p>Open Figma and trigger your first critique in seconds.</p>
+      <div class="cta-buttons">
+        <a class="btn" href="#">Get the Figma Plugin
+          <span class="ico ico-white" style="--i:url(assets/figma/download.svg)" aria-hidden="true"></span>
+        </a>
+        <a class="btn btn-ghost" href="#">Open Playground Canvas</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© gomondesigns <span aria-hidden="true">•</span> Independent visual tooling</p>
+    <nav aria-label="Footer">
+      <a href="#">Figma Manifest</a>
+      <a href="#">Release Log</a>
+      <a href="#">Twitter / X</a>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
