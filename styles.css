@@ -67,7 +67,7 @@ a { color: inherit; text-decoration: none; }
 }
 .header-inner { height: 64px; display: flex; align-items: center; justify-content: space-between; gap: 16px; }
 .brand { display: flex; align-items: center; }
-.brand img { height: 40px; width: auto; mix-blend-mode: multiply; }
+.brand img { height: 24px; width: auto; mix-blend-mode: multiply; }
 
 /* buttons */
 .btn {
